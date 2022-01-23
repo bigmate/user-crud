@@ -66,29 +66,33 @@ func (c *Client) Get(ctx context.Context, id string) (*models.User, error) {
 func (c *Client) Insert(ctx context.Context, user models.User) (*models.User, error) {
 	qb := pq().Insert(usersTable).Suffix("RETURNING *")
 
+	values := make(map[string]interface{})
+
 	if user.FirstName != "" {
-		qb = qb.SetMap(map[string]interface{}{"first_name": user.FirstName})
+		values["first_name"] = user.FirstName
 	}
 
 	if user.LastName != "" {
-		qb = qb.SetMap(map[string]interface{}{"last_name": user.LastName})
+		values["last_name"] = user.LastName
 	}
 
 	if user.Nickname != "" {
-		qb = qb.SetMap(map[string]interface{}{"nickname": user.Nickname})
+		values["nickname"] = user.Nickname
 	}
 
 	if user.Password != "" {
-		qb = qb.SetMap(map[string]interface{}{"password": user.Password})
+		values["password"] = user.Password
 	}
 
 	if user.Email != "" {
-		qb = qb.SetMap(map[string]interface{}{"email": user.Email})
+		values["email"] = user.Email
 	}
 
 	if user.Country != "" {
-		qb = qb.SetMap(map[string]interface{}{"country": user.Country})
+		values["country"] = user.Country
 	}
+
+	qb = qb.SetMap(values)
 
 	query, args, err := qb.ToSql()
 
@@ -109,8 +113,8 @@ func (c *Client) Insert(ctx context.Context, user models.User) (*models.User, er
 		switch pgErr.ColumnName {
 		case "password":
 			return nil, fielderror.FieldErrorf("password", "password is required")
-		case "first_name":
-			return nil, fielderror.FieldErrorf("firstName", "first name is required")
+		case "email":
+			return nil, fielderror.FieldErrorf("email", "email is required")
 		}
 	}
 
