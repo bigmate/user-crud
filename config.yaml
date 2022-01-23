@@ -1,0 +1,10 @@
+app_name: "user-crud"
+postgres:
+  db_name: "users"
+  user: "postgres"
+  password: "postgres"
+  port: "5432"
+  dsn: "host=localhost user=%s password=%s database=%s port=%s"
+kafka:
+  brokers:
+    - "localhost:9092"
