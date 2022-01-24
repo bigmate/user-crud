@@ -260,3 +260,7 @@ func (c *Client) Delete(ctx context.Context, id string) error {
 
 	return nil
 }
+
+func (c *Client) Database() *sqlx.DB {
+	return c.db
+}
