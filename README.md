@@ -12,4 +12,9 @@ about endpoints the app exposes.
 
 The business logic layer is within `user-crud/internal/services` folder.
 
+### Servers
+1. HTTP - `localhost:8080`
+2. GRPC - `localhost:8081`
+3. HealthCheck HTTP - `localhost:8082/health`
+
 PS, I used buf.gen tool to generate DTO objects because it's boilerplate code to map incoming request to respective data structure.
