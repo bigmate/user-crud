@@ -37,7 +37,7 @@ func (c *closer) close() {
 	}
 }
 
-// Run implements pkg.App interface
+// Run implements app.App interface
 func (c *closer) Run(ctx context.Context) error {
 	<-ctx.Done()
 	c.close()
@@ -45,7 +45,7 @@ func (c *closer) Run(ctx context.Context) error {
 }
 
 // Add adds resource releaser func to the collections of functions
-// that are run before application exits
+// that are run in FIFO order before application exits
 func Add(c func() error) {
 	cl.rw.Lock()
 	defer cl.rw.Unlock()

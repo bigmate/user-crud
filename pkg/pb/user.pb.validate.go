@@ -395,7 +395,7 @@ func (m *GetUserRequest) Validate() error {
 	if !_GetUserRequest_Id_Pattern.MatchString(m.GetId()) {
 		return GetUserRequestValidationError{
 			field:  "Id",
-			reason: "value does not match regex pattern \"^[0-9a-fA-F]{8}\\b-[0-9a-fA-F]{4}\\b-[0-9a-fA-F]{4}\\b-[0-9a-fA-F]{4}\\b-[0-9a-fA-F]{12}$\"",
+			reason: "value does not match regex pattern \"^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$\"",
 		}
 	}
 
@@ -456,7 +456,7 @@ var _ interface {
 	ErrorName() string
 } = GetUserRequestValidationError{}
 
-var _GetUserRequest_Id_Pattern = regexp.MustCompile("^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$")
+var _GetUserRequest_Id_Pattern = regexp.MustCompile("^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$")
 
 // Validate checks the field values on GetUserResponse with the rules defined
 // in the proto definition for this message. If any rules are violated, an
@@ -566,7 +566,7 @@ func (m *UpdateUserRequest) Validate() error {
 	if !_UpdateUserRequest_Id_Pattern.MatchString(m.GetId()) {
 		return UpdateUserRequestValidationError{
 			field:  "Id",
-			reason: "value does not match regex pattern \"^[0-9a-fA-F]{8}\\b-[0-9a-fA-F]{4}\\b-[0-9a-fA-F]{4}\\b-[0-9a-fA-F]{4}\\b-[0-9a-fA-F]{12}$\"",
+			reason: "value does not match regex pattern \"^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$\"",
 		}
 	}
 
@@ -648,7 +648,7 @@ var _ interface {
 	ErrorName() string
 } = UpdateUserRequestValidationError{}
 
-var _UpdateUserRequest_Id_Pattern = regexp.MustCompile("^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$")
+var _UpdateUserRequest_Id_Pattern = regexp.MustCompile("^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$")
 
 var _UpdateUserRequest_Email_Pattern = regexp.MustCompile("^\\w+@\\w+\\.\\w+$")
 
@@ -762,7 +762,7 @@ func (m *DeleteUserRequest) Validate() error {
 	if !_DeleteUserRequest_Id_Pattern.MatchString(m.GetId()) {
 		return DeleteUserRequestValidationError{
 			field:  "Id",
-			reason: "value does not match regex pattern \"^[0-9a-fA-F]{8}\\b-[0-9a-fA-F]{4}\\b-[0-9a-fA-F]{4}\\b-[0-9a-fA-F]{4}\\b-[0-9a-fA-F]{12}$\"",
+			reason: "value does not match regex pattern \"^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$\"",
 		}
 	}
 
@@ -825,7 +825,7 @@ var _ interface {
 	ErrorName() string
 } = DeleteUserRequestValidationError{}
 
-var _DeleteUserRequest_Id_Pattern = regexp.MustCompile("^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$")
+var _DeleteUserRequest_Id_Pattern = regexp.MustCompile("^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$")
 
 // Validate checks the field values on DeleteUserResponse with the rules
 // defined in the proto definition for this message. If any rules are

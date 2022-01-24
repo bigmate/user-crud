@@ -12,6 +12,10 @@ type modelEncoder struct {
 	err error
 }
 
+// NewModelEncoder encodes data as json and returns
+// io.Reader of encoded data.
+// It's very convenient to modify encoding here if you want
+// to send data in other formats via notifier service
 func NewModelEncoder(data interface{}) io.Reader {
 	mdEnc := &modelEncoder{
 		buf: &bytes.Buffer{},

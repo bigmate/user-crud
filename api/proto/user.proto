@@ -87,7 +87,7 @@ message CreateUserResponse {
   google.protobuf.Timestamp updated_at = 8;
 }
 
-message GetUserRequest {string id = 1 [(validate.rules).string = {pattern: "^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$"}];}
+message GetUserRequest {string id = 1 [(validate.rules).string = {pattern: "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"}];}
 
 message GetUserResponse {
   string id = 1;
@@ -101,7 +101,7 @@ message GetUserResponse {
 }
 
 message UpdateUserRequest {
-  string id = 1 [(validate.rules).string = {pattern: "^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$"}];
+  string id = 1 [(validate.rules).string = {pattern: "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"}];
   string first_name = 2;
   string last_name = 3;
   string nickname = 4;
@@ -122,7 +122,7 @@ message UpdateUserResponse {
 }
 
 message DeleteUserRequest {
-  string id = 1 [(validate.rules).string = {pattern: "^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$"}];
+  string id = 1 [(validate.rules).string = {pattern: "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"}];
 }
 
 // Empty response message

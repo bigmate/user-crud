@@ -4,6 +4,7 @@ import (
 	"time"
 )
 
+// User represents a user model in the db
 type User struct {
 	ID        string    `json:"id"`
 	FirstName string    `json:"first_name" db:"first_name"`

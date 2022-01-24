@@ -23,6 +23,7 @@ func NewRunner(apps ...App) *Runner {
 	return &Runner{apps: apps}
 }
 
+// Add adds an App into collection of Apps to be run
 func (r *Runner) Add(app App) *Runner {
 	r.apps = append(r.apps, app)
 	return r

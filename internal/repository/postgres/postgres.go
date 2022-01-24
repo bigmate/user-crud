@@ -27,6 +27,10 @@ type Client struct {
 	db *sqlx.DB
 }
 
+func (c *Client) Ping(ctx context.Context) error {
+	return c.db.PingContext(ctx)
+}
+
 //Get gets a user's info from the DB
 func (c *Client) Get(ctx context.Context, id string) (*models.User, error) {
 	qb := pq().Select(
@@ -236,6 +240,7 @@ func (c *Client) List(ctx context.Context, pg paginator.Paginator, filters ...fi
 	return &users, nil
 }
 
+// Delete deletes user from db
 func (c *Client) Delete(ctx context.Context, id string) error {
 	qb := pq().Delete(usersTable).Where(squirrel.Eq{"id": id})
 

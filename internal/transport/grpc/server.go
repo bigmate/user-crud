@@ -6,7 +6,6 @@ import (
 	"net"
 	"net/http"
 
-	"user-crud/internal/config"
 	"user-crud/internal/repository"
 	"user-crud/internal/services/notifier"
 	"user-crud/internal/services/user"
@@ -24,27 +23,17 @@ type server struct {
 	user  user.Service
 }
 
-func NewServer(ctx context.Context, conf *config.Config, options ...Option) (app.App, error) {
+func NewServer(repo repository.User, notify notifier.Service, options ...Option) app.App {
 	param := defaultParameters()
 
 	for _, option := range options {
 		option(param)
 	}
 
-	repo, err := repository.NewUserRepository(ctx, conf)
-	if err != nil {
-		return nil, err
-	}
-
-	notify, err := notifier.NewService(conf)
-	if err != nil {
-		return nil, err
-	}
-
 	return &server{
 		param: param,
 		user:  user.NewService(repo, notify),
-	}, nil
+	}
 }
 
 func (s *server) Run(ctx context.Context) error {
