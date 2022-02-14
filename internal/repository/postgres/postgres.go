@@ -8,9 +8,10 @@ import (
 	"time"
 
 	"user-crud/internal/models"
-	"user-crud/pkg/fielderror"
 	"user-crud/pkg/filter"
 	"user-crud/pkg/paginator"
+
+	fielderror "github.com/bigmate/errors"
 
 	"github.com/Masterminds/squirrel"
 	"github.com/jackc/pgconn"

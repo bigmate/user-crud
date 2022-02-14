@@ -5,7 +5,8 @@ import (
 	"fmt"
 
 	"user-crud/internal/config"
-	"user-crud/pkg/closer"
+
+	"github.com/bigmate/closer"
 
 	_ "github.com/jackc/pgx/v4/stdlib"
 	"github.com/jmoiron/sqlx"

@@ -9,8 +9,9 @@ import (
 	"user-crud/internal/repository"
 	"user-crud/internal/services/notifier"
 	"user-crud/internal/services/user"
-	"user-crud/pkg/app"
 	usermanager "user-crud/pkg/pb"
+
+	"github.com/bigmate/app"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
 	"google.golang.org/grpc"

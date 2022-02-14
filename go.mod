@@ -5,9 +5,13 @@ go 1.17
 require (
 	github.com/Masterminds/squirrel v1.5.2
 	github.com/Shopify/sarama v1.31.0
+	github.com/bigmate/app v0.0.0-20220211170402-56cacfb72780
+	github.com/bigmate/closer v0.0.0-20220211171103-32de42de1c11
+	github.com/bigmate/errors v0.0.0-20220211172214-3c084e0f3fb7
+	github.com/bigmate/healthcheck v0.0.0-20220211172103-1e9bac0e59b8
+	github.com/bigmate/interceptors v0.0.0-20220211172315-3fac994d8b08
 	github.com/envoyproxy/protoc-gen-validate v0.1.0
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.7.3
-	github.com/hashicorp/go-multierror v1.1.1
 	github.com/jackc/pgconn v1.10.1
 	github.com/jackc/pgerrcode v0.0.0-20201024163028-a0d42d470451
 	github.com/jackc/pgx/v4 v4.14.0
@@ -17,7 +21,7 @@ require (
 	github.com/stretchr/testify v1.7.0
 	golang.org/x/crypto v0.0.0-20220112180741-5e0467b6c7ce
 	google.golang.org/genproto v0.0.0-20220118154757-00ab72f36ad5
-	google.golang.org/grpc v1.43.0
+	google.golang.org/grpc v1.44.0
 	google.golang.org/grpc/cmd/protoc-gen-go-grpc v1.2.0
 	google.golang.org/protobuf v1.27.1
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
@@ -41,6 +45,7 @@ require (
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/gotestyourself/gotestyourself v2.2.0+incompatible // indirect
 	github.com/hashicorp/errwrap v1.0.0 // indirect
+	github.com/hashicorp/go-multierror v1.1.1 // indirect
 	github.com/hashicorp/go-uuid v1.0.2 // indirect
 	github.com/jackc/chunkreader/v2 v2.0.1 // indirect
 	github.com/jackc/pgio v1.0.0 // indirect

@@ -58,6 +58,16 @@ github.com/antihax/optional v1.0.0/go.mod h1:uupD/76wgC+ih3iEmQUL+0Ugr19nfwCT1kd
 github.com/armon/consul-api v0.0.0-20180202201655-eb2c6b5be1b6/go.mod h1:grANhF5doyWs3UAsr3K4I6qtAmlQcZDesFNEHPZAzj8=
 github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973/go.mod h1:Dwedo/Wpr24TaqPxmxbtue+5NUziq4I4S80YR8gNf3Q=
 github.com/beorn7/perks v1.0.0/go.mod h1:KWe93zE9D1o94FZ5RNwFwVgaQK1VOXiVxmqh+CedLV8=
+github.com/bigmate/app v0.0.0-20220211170402-56cacfb72780 h1:zF+wsQzrypZIw82XShN7VIvL1sxA1YskfOA9BU/uqz0=
+github.com/bigmate/app v0.0.0-20220211170402-56cacfb72780/go.mod h1:2ceu1bQGh87haI4hvc5fyrjAOcl6IWtdqy680kmcU2k=
+github.com/bigmate/closer v0.0.0-20220211171103-32de42de1c11 h1:VqnydXdipgs+XulOmypbOvGSqUthphei7MnURfKFwGo=
+github.com/bigmate/closer v0.0.0-20220211171103-32de42de1c11/go.mod h1:c9kJZHIor3wMS6wbQjeTwBoDTZkazcBo+FZc4e+2tvM=
+github.com/bigmate/errors v0.0.0-20220211172214-3c084e0f3fb7 h1:u3FyQ+oH7OJ1weMWVX0d3fSb38+vK8RbDWK/pVRAmVM=
+github.com/bigmate/errors v0.0.0-20220211172214-3c084e0f3fb7/go.mod h1:OBv13TBDqYiqKsfCtRZ9Eix+HItaudxlLVHc5dTkBpE=
+github.com/bigmate/healthcheck v0.0.0-20220211172103-1e9bac0e59b8 h1:IKRVQmRDyMQSAON/3EUgv+CpY7BsHkdP7H4upaFB/DM=
+github.com/bigmate/healthcheck v0.0.0-20220211172103-1e9bac0e59b8/go.mod h1:BP19WgAwMdi4UONndBGcaeg4zf/iQT/JDwLM85zNlA8=
+github.com/bigmate/interceptors v0.0.0-20220211172315-3fac994d8b08 h1:ICva4JW2aI/Ahx2VQsSdUHK1ttl8H8ucJf9FB9rgA8U=
+github.com/bigmate/interceptors v0.0.0-20220211172315-3fac994d8b08/go.mod h1:4LhfvMpLkVoq0VKuydHrMPWrqtR09abpM1gL++qTYlI=
 github.com/bits-and-blooms/bitset v1.2.0/go.mod h1:gIdJ4wp64HaoK2YrL1Q5/N7Y16edYb8uY+O0FJTyyDA=
 github.com/bkaradzic/go-lz4 v1.0.0/go.mod h1:0YdlkowM3VswSROI7qDxhRvJ3sLhlFrRRwjwegp5jy4=
 github.com/cenkalti/backoff v2.2.1+incompatible h1:tNowT99t7UNflLxfYYSlKYsBpXdEet03Pg2g16Swow4=
@@ -791,8 +801,9 @@ google.golang.org/grpc v1.31.0/go.mod h1:N36X2cJ7JwdamYAgDz+s+rVMFjt3numwzf/HckM
 google.golang.org/grpc v1.33.1/go.mod h1:fr5YgcSWrqhRRxogOsw7RzIpsmvOZ6IcH4kBYTpR3n0=
 google.golang.org/grpc v1.36.0/go.mod h1:qjiiYl8FncCW8feJPdyg3v6XW24KsRHe+dy9BAGRRjU=
 google.golang.org/grpc v1.40.0/go.mod h1:ogyxbiOoUXAkP+4+xa6PZSE9DZgIHtSpzjDTB9KAK34=
-google.golang.org/grpc v1.43.0 h1:Eeu7bZtDZ2DpRCsLhUlcrLnvYaMK1Gz86a+hMVvELmM=
 google.golang.org/grpc v1.43.0/go.mod h1:k+4IHHFw41K8+bbowsex27ge2rCb65oeWqe4jJ590SU=
+google.golang.org/grpc v1.44.0 h1:weqSxi/TMs1SqFRMHCtBgXRs8k3X39QIDEZ0pRcttUg=
+google.golang.org/grpc v1.44.0/go.mod h1:k+4IHHFw41K8+bbowsex27ge2rCb65oeWqe4jJ590SU=
 google.golang.org/grpc/cmd/protoc-gen-go-grpc v1.2.0 h1:TLkBREm4nIsEcexnCjgQd5GQWaHcqMzwQV0TX9pq8S0=
 google.golang.org/grpc/cmd/protoc-gen-go-grpc v1.2.0/go.mod h1:DNq5QpG7LJqD2AamLZ7zvKE0DEpVl2BSEVjFycAAjRY=
 google.golang.org/protobuf v0.0.0-20200109180630-ec00e32a8dfd/go.mod h1:DFci5gLYBciE7Vtevhsrf46CRTquxDuWsQurQQe4oz8=

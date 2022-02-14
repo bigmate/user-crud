@@ -11,10 +11,11 @@ import (
 	"user-crud/internal/repository/kafka"
 	"user-crud/internal/repository/postgres"
 	"user-crud/internal/transport/grpc"
-	"user-crud/pkg/app"
-	"user-crud/pkg/closer"
-	"user-crud/pkg/healthcheck"
-	"user-crud/pkg/interceptors"
+
+	"github.com/bigmate/app"
+	"github.com/bigmate/closer"
+	"github.com/bigmate/healthcheck"
+	"github.com/bigmate/interceptors"
 )
 
 func main() {

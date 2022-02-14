@@ -9,7 +9,8 @@ import (
 	"time"
 
 	"user-crud/internal/config"
-	"user-crud/pkg/closer"
+
+	"github.com/bigmate/closer"
 
 	"github.com/Shopify/sarama"
 )
